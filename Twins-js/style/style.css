@@ -1,7 +1,6 @@
 @font-face {
 	font-family: "SIMPLIFICA";
 	src: local("SIMPLIFICA"), url("../fonts/SIMPLIFICA.woff2") format("woff2"), url("../fonts/SIMPLIFICA.woff") format("woff");
-	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
 }
@@ -22,6 +21,7 @@
 body {
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
 	background: var(--main-bg-color);
 	font-family: 'SIMPLIFICA', sans-serif;
 }
@@ -93,6 +93,7 @@ body {
 }
 
 .btn {
+	margin-bottom: 20px;
 	padding: 20px;
 	font-weight: 600;
 	border: 2px solid black;
