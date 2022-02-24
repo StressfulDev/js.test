@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let countMatch = 0;
 	let header = document.querySelector('.couple-title');
 	const btn = document.querySelector('.btn');
+	let screenWidth = window.screen.width;
 
 
 	function flipCard() {
@@ -31,6 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		isMatch ? disableCards() : unflipCards();
 		if (isMatch) countMatch++;
 		if (countMatch === 8) {
+			btn.classList.add('btn-visible');
+			header.innerHTML = '! CONGRATULATIONS !';
+		}
+		if (screenWidth <= 600 && countMatch === 6) {
 			btn.classList.add('btn-visible');
 			header.innerHTML = '! CONGRATULATIONS !';
 		}
