@@ -30,9 +30,7 @@ function getDayInfo(date) {
     const month = dateInfo.getMonth();
     const year = dateInfo.getFullYear();
     const dayInMonth = dateInfo.getDate();
-    const weekOfDay = Math.floor(dayInMonth / 7) + 1;
+    const weekOfMonth = Math.floor(dayInMonth / 7) + 1;
 
-    return `${days[day]}, ${weekOfDay} неделя ${months[month]} ${year} года`;
+    return `${days[day]}, ${weekOfMonth} неделя ${months[month]} ${year} года`;
 }
-
-getDayInfo('15.12.2021');
